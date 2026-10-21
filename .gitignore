@@ -13,9 +13,11 @@
 .env.development.local
 .env.test.local
 .env.production.local
-# Whitelist example environment templates
-!.env.example
-!.env.template
+# Environment templates (excluded from upload)
+.env.example
+*.env.example
+.env.template
+*.env.template
 
 # ------------------------------------------------------------------------------
 # 2. Python Runtime, Bytecode & Virtual Environments
@@ -204,5 +206,8 @@ $RECYCLE.BIN/
 *.sublime-project
 *.sublime-workspace
 
-# presenation_slides
+# ------------------------------------------------------------------------------
+# 10. Presentation Slides & HTML Documents (Excluded from GitHub Upload)
+# ------------------------------------------------------------------------------
 presentation_slides.html
+*.html
