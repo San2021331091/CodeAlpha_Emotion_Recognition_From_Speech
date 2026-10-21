@@ -358,5 +358,5 @@ npm run dev
 ## 👨‍💻 Author & Acknowledgements
 - Developed by: **Santosh Saha**
 - Role: Machine Learning Intern at [CodeAlpha](https://www.codealpha.tech/)
-- Task-2 — Speech Emotion Recognition
+- Task:2 — Speech Emotion Recognition
 - Program: CodeAlpha Machine Learning Internship
