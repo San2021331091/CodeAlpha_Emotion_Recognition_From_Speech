@@ -1,0 +1,205 @@
+# ==============================================================================
+# Git Ignore Configuration — CodeAlpha Task 2: Speech Emotion Recognition
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment Variables, Secrets & Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.*
+*.env
+*.env.*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+# Whitelist example environment templates
+!.env.example
+!.env.template
+
+# ------------------------------------------------------------------------------
+# 2. Python Runtime, Bytecode & Virtual Environments
+# ------------------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.pyd
+*.pyo
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing, typing & coverage caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+.cache/
+
+# ------------------------------------------------------------------------------
+# 3. Audio & JIT Compiler Caches (Numba & Librosa)
+# ------------------------------------------------------------------------------
+.numba_cache/
+*.nbc
+*.nbi
+
+# ------------------------------------------------------------------------------
+# 4. Node.js, Frontend (Next.js) & Backend Gateway (NestJS)
+# ------------------------------------------------------------------------------
+node_modules/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Next.js build and export outputs
+.next/
+out/
+frontend/.next/
+frontend/out/
+
+# TypeScript & build artifacts
+*.tsbuildinfo
+backend-gateway/dist/
+frontend/.next/
+.turbo/
+.parcel-cache/
+
+# ------------------------------------------------------------------------------
+# 5. Logs & Service Runtime Output
+# ------------------------------------------------------------------------------
+*.log
+.logs/
+logs/
+backend-gateway/.logs/
+ml-service/.logs/
+*.pid
+*.seed
+*.pid.lock
+
+# ------------------------------------------------------------------------------
+# 6. Large Datasets & Raw Audio Files (Exceeds GitHub Limits & Licensing Terms)
+# ------------------------------------------------------------------------------
+# Downloaded multi-corpus audio datasets (RAVDESS: ~760MB, TESS: ~270MB, EMO-DB: ~46MB)
+ml-service/data/ravdess/
+ml-service/data/tess/
+ml-service/data/emo-db/
+
+# Augmented & synthetic audio training corpora (training_50000: ~7.2GB)
+ml-service/data/training_*/
+ml-service/data/training_50000/
+ml-service/data/training_balanced/
+ml-service/data/training_regenerated_v2/
+
+# General audio files in data directories
+ml-service/data/**/*.wav
+ml-service/data/**/*.mp3
+ml-service/data/**/*.flac
+ml-service/data/**/*.ogg
+ml-service/data/**/*.m4a
+
+# Keep the lightweight benchmark validation samples for testing & demos
+!ml-service/data/audio_samples/
+!ml-service/data/audio_samples/**
+!ml-service/data/audio_samples/benchmark/*.wav
+!ml-service/data/benchmark_manifest.json
+
+# ------------------------------------------------------------------------------
+# 7. Heavy Extracted Feature Arrays & Feature Caches
+# ------------------------------------------------------------------------------
+*.npz
+*.npy
+ml-service/data/*.npz
+ml-service/data/*.npy
+ml-service/data/cached_features.npz
+ml-service/data/multicorpus_features_*.npz
+ml-service/data/ravdess_features_*.npz
+ml-service/data/wavlm_features_*.npy
+ml-service/data/wavlm_features_*.json
+
+# ------------------------------------------------------------------------------
+# 8. Pretrained Model Weights, Cache & Large Deep Learning Binaries (>100MB)
+# ------------------------------------------------------------------------------
+# Hugging Face / Transformers local WavLM cache (~720MB)
+.model_cache/
+ml-service/.model_cache/
+
+# Heavy neural network weight checkpoints
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.onnx
+*.weights
+
+# Intermediate / experimental training staging directories
+ml-service/saved_models_*/
+saved_models_*/
+
+# Runtime ML job state & diagnostic records
+ml-service/last_inference_diagnostic.json
+ml-service/training_job.json
+
+# Model Binaries Note:
+# The deployed models in ml-service/saved_models/ (~49MB total) are tracked so the
+# application can be cloned and run immediately without retraining.
+# If you prefer to exclude all serialized .joblib models, uncomment the lines below:
+# ml-service/saved_models/*.joblib
+# !ml-service/saved_models/metrics.json
+
+# ------------------------------------------------------------------------------
+# 9. IDE & Operating System Files
+# ------------------------------------------------------------------------------
+# Operating System
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# IDEs & Text Editors
+.idea/
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.swp
+*.swo
+*~
+*.bak
+*.sublime-project
+*.sublime-workspace

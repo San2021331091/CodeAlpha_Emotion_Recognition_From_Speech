@@ -1,0 +1,200 @@
+[
+  {
+    "id": "ravdess_neutral",
+    "title": "RAVDESS: Neutral",
+    "emotion": "neutral",
+    "dataset": "RAVDESS",
+    "speaker": "21",
+    "language": "English",
+    "duration_seconds": 3.84,
+    "description": "Human speech from a held-out RAVDESS test speaker with neutral emotion.",
+    "filename": "ravdess_neutral_03-01-01-01-01-01-21.wav"
+  },
+  {
+    "id": "ravdess_happy",
+    "title": "RAVDESS: Happy",
+    "emotion": "happy",
+    "dataset": "RAVDESS",
+    "speaker": "21",
+    "language": "English",
+    "duration_seconds": 3.84,
+    "description": "Human speech from a held-out RAVDESS test speaker with happy emotion.",
+    "filename": "ravdess_happy_03-01-03-01-01-01-21.wav"
+  },
+  {
+    "id": "ravdess_sad",
+    "title": "RAVDESS: Sad",
+    "emotion": "sad",
+    "dataset": "RAVDESS",
+    "speaker": "21",
+    "language": "English",
+    "duration_seconds": 4.3,
+    "description": "Human speech from a held-out RAVDESS test speaker with sad emotion.",
+    "filename": "ravdess_sad_03-01-04-01-01-01-21.wav"
+  },
+  {
+    "id": "ravdess_angry",
+    "title": "RAVDESS: Angry",
+    "emotion": "angry",
+    "dataset": "RAVDESS",
+    "speaker": "21",
+    "language": "English",
+    "duration_seconds": 4.14,
+    "description": "Human speech from a held-out RAVDESS test speaker with angry emotion.",
+    "filename": "ravdess_angry_03-01-05-01-01-01-21.wav"
+  },
+  {
+    "id": "ravdess_fearful",
+    "title": "RAVDESS: Fearful",
+    "emotion": "fearful",
+    "dataset": "RAVDESS",
+    "speaker": "21",
+    "language": "English",
+    "duration_seconds": 3.67,
+    "description": "Human speech from a held-out RAVDESS test speaker with fearful emotion.",
+    "filename": "ravdess_fearful_03-01-06-01-01-01-21.wav"
+  },
+  {
+    "id": "ravdess_disgust",
+    "title": "RAVDESS: Disgust",
+    "emotion": "disgust",
+    "dataset": "RAVDESS",
+    "speaker": "21",
+    "language": "English",
+    "duration_seconds": 3.8,
+    "description": "Human speech from a held-out RAVDESS test speaker with disgust emotion.",
+    "filename": "ravdess_disgust_03-01-07-01-01-01-21.wav"
+  },
+  {
+    "id": "tess_neutral",
+    "title": "TESS: Neutral",
+    "emotion": "neutral",
+    "dataset": "TESS",
+    "speaker": "YAF",
+    "language": "English (Canada)",
+    "duration_seconds": 2.16,
+    "description": "Human speech from a held-out TESS test speaker with neutral emotion.",
+    "filename": "tess_neutral_YAF_fat_neutral.wav"
+  },
+  {
+    "id": "tess_happy",
+    "title": "TESS: Happy",
+    "emotion": "happy",
+    "dataset": "TESS",
+    "speaker": "YAF",
+    "language": "English (Canada)",
+    "duration_seconds": 1.96,
+    "description": "Human speech from a held-out TESS test speaker with happy emotion.",
+    "filename": "tess_happy_YAF_fat_happy.wav"
+  },
+  {
+    "id": "tess_sad",
+    "title": "TESS: Sad",
+    "emotion": "sad",
+    "dataset": "TESS",
+    "speaker": "YAF",
+    "language": "English (Canada)",
+    "duration_seconds": 2.03,
+    "description": "Human speech from a held-out TESS test speaker with sad emotion.",
+    "filename": "tess_sad_YAF_fat_sad.wav"
+  },
+  {
+    "id": "tess_angry",
+    "title": "TESS: Angry",
+    "emotion": "angry",
+    "dataset": "TESS",
+    "speaker": "YAF",
+    "language": "English (Canada)",
+    "duration_seconds": 1.84,
+    "description": "Human speech from a held-out TESS test speaker with angry emotion.",
+    "filename": "tess_angry_YAF_fat_angry.wav"
+  },
+  {
+    "id": "tess_fearful",
+    "title": "TESS: Fearful",
+    "emotion": "fearful",
+    "dataset": "TESS",
+    "speaker": "YAF",
+    "language": "English (Canada)",
+    "duration_seconds": 1.48,
+    "description": "Human speech from a held-out TESS test speaker with fearful emotion.",
+    "filename": "tess_fearful_YAF_fat_fear.wav"
+  },
+  {
+    "id": "tess_disgust",
+    "title": "TESS: Disgust",
+    "emotion": "disgust",
+    "dataset": "TESS",
+    "speaker": "YAF",
+    "language": "English (Canada)",
+    "duration_seconds": 2.34,
+    "description": "Human speech from a held-out TESS test speaker with disgust emotion.",
+    "filename": "tess_disgust_YAF_fat_disgust.wav"
+  },
+  {
+    "id": "emodb_neutral",
+    "title": "EMO-DB: Neutral",
+    "emotion": "neutral",
+    "dataset": "EMO-DB",
+    "speaker": "15",
+    "language": "German",
+    "duration_seconds": 1.63,
+    "description": "Human speech from a held-out EMO-DB test speaker with neutral emotion.",
+    "filename": "emodb_neutral_15a01Nb.wav"
+  },
+  {
+    "id": "emodb_happy",
+    "title": "EMO-DB: Happy",
+    "emotion": "happy",
+    "dataset": "EMO-DB",
+    "speaker": "15",
+    "language": "German",
+    "duration_seconds": 1.63,
+    "description": "Human speech from a held-out EMO-DB test speaker with happy emotion.",
+    "filename": "emodb_happy_15a01Fb.wav"
+  },
+  {
+    "id": "emodb_sad",
+    "title": "EMO-DB: Sad",
+    "emotion": "sad",
+    "dataset": "EMO-DB",
+    "speaker": "15",
+    "language": "German",
+    "duration_seconds": 2.27,
+    "description": "Human speech from a held-out EMO-DB test speaker with sad emotion.",
+    "filename": "emodb_sad_15a02Ta.wav"
+  },
+  {
+    "id": "emodb_angry",
+    "title": "EMO-DB: Angry",
+    "emotion": "angry",
+    "dataset": "EMO-DB",
+    "speaker": "15",
+    "language": "German",
+    "duration_seconds": 1.83,
+    "description": "Human speech from a held-out EMO-DB test speaker with angry emotion.",
+    "filename": "emodb_angry_15a01Wa.wav"
+  },
+  {
+    "id": "emodb_fearful",
+    "title": "EMO-DB: Fearful",
+    "emotion": "fearful",
+    "dataset": "EMO-DB",
+    "speaker": "15",
+    "language": "German",
+    "duration_seconds": 1.89,
+    "description": "Human speech from a held-out EMO-DB test speaker with fearful emotion.",
+    "filename": "emodb_fearful_15a02Ac.wav"
+  },
+  {
+    "id": "emodb_disgust",
+    "title": "EMO-DB: Disgust",
+    "emotion": "disgust",
+    "dataset": "EMO-DB",
+    "speaker": "15",
+    "language": "German",
+    "duration_seconds": 2.55,
+    "description": "Human speech from a held-out EMO-DB test speaker with disgust emotion.",
+    "filename": "emodb_disgust_15a01Ea.wav"
+  }
+]

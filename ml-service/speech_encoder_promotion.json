@@ -1,0 +1,49 @@
+{
+  "selection_macro_f1": {
+    "previous": 0.6866465932860856,
+    "candidate": 0.8512400792318746
+  },
+  "previous_model": "Validation-selected Ensemble",
+  "candidate_model": "WavLM Speech Classifier",
+  "previous_happy_metrics": {
+    "precision": 0.5,
+    "recall": 0.4402,
+    "f1_score": 0.4682,
+    "support": 209
+  },
+  "candidate_happy_metrics": {
+    "precision": 0.8349,
+    "recall": 0.8469,
+    "f1_score": 0.8409,
+    "support": 209
+  },
+  "candidate_test_metrics": {
+    "key": "speech_encoder",
+    "accuracy": 0.8782,
+    "precision": 0.8892,
+    "recall": 0.8788,
+    "f1_score": 0.8805,
+    "roc_auc": 0.9876,
+    "inference_latency_ms": 338.73,
+    "validation_accuracy": 0.8484,
+    "validation_macro_f1": 0.8512,
+    "test_by_dataset": {
+      "EMO-DB": {
+        "samples": 104,
+        "accuracy": 0.8365384615384616,
+        "macro_f1": 0.8208183572699701
+      },
+      "RAVDESS": {
+        "samples": 176,
+        "accuracy": 0.7954545454545454,
+        "macro_f1": 0.8068747306918693
+      },
+      "TESS": {
+        "samples": 960,
+        "accuracy": 0.8979166666666667,
+        "macro_f1": 0.8994771042839241
+      }
+    }
+  },
+  "promoted": true
+}

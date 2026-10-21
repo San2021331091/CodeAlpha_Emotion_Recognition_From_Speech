@@ -1,0 +1,701 @@
+{
+  "best_model": "WavLM Speech Classifier",
+  "ensemble": {
+    "members": [
+      "cnn",
+      "lstm"
+    ],
+    "weights": [
+      0.9,
+      0.09999999999999998
+    ]
+  },
+  "models": {
+    "Deep MLP (Multi-Layer Perceptron)": {
+      "key": "mlp",
+      "accuracy": 0.5395,
+      "precision": 0.599,
+      "recall": 0.5374,
+      "f1_score": 0.5082,
+      "roc_auc": 0.8959,
+      "inference_latency_ms": 0.28,
+      "validation_accuracy": 0.5884,
+      "validation_macro_f1": 0.5894,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.5769,
+          "macro_f1": 0.527
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.4261,
+          "macro_f1": 0.405
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.5563,
+          "macro_f1": 0.5056
+        }
+      }
+    },
+    "Random Forest": {
+      "key": "random_forest",
+      "accuracy": 0.4831,
+      "precision": 0.5458,
+      "recall": 0.4836,
+      "f1_score": 0.4516,
+      "roc_auc": 0.854,
+      "inference_latency_ms": 38.71,
+      "validation_accuracy": 0.5686,
+      "validation_macro_f1": 0.5547,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.5481,
+          "macro_f1": 0.5016
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.4261,
+          "macro_f1": 0.4167
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.4865,
+          "macro_f1": 0.4315
+        }
+      }
+    },
+    "Support Vector Classifier (SVM)": {
+      "key": "svm",
+      "accuracy": 0.5242,
+      "precision": 0.5778,
+      "recall": 0.524,
+      "f1_score": 0.4795,
+      "roc_auc": 0.9031,
+      "inference_latency_ms": 0.53,
+      "validation_accuracy": 0.5637,
+      "validation_macro_f1": 0.5584,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.5192,
+          "macro_f1": 0.4404
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.4602,
+          "macro_f1": 0.4354
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.5365,
+          "macro_f1": 0.4596
+        }
+      }
+    },
+    "Histogram Gradient Boosting": {
+      "key": "hist_gradient_boosting",
+      "accuracy": 0.5056,
+      "precision": 0.5388,
+      "recall": 0.506,
+      "f1_score": 0.453,
+      "roc_auc": 0.8877,
+      "inference_latency_ms": 17.81,
+      "validation_accuracy": 0.563,
+      "validation_macro_f1": 0.5495,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.5769,
+          "macro_f1": 0.5254
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.4943,
+          "macro_f1": 0.4765
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.5,
+          "macro_f1": 0.4072
+        }
+      }
+    },
+    "1D-CNN (Temporal Convolutional Network)": {
+      "key": "cnn",
+      "accuracy": 0.7016,
+      "precision": 0.7043,
+      "recall": 0.7021,
+      "f1_score": 0.6933,
+      "roc_auc": 0.9471,
+      "inference_latency_ms": 0.66,
+      "validation_accuracy": 0.6641,
+      "validation_macro_f1": 0.6603,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6731,
+          "macro_f1": 0.6218
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.3636,
+          "macro_f1": 0.3579
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.7667,
+          "macro_f1": 0.7539
+        }
+      }
+    },
+    "Bi-LSTM (Bidirectional Recurrent Network)": {
+      "key": "lstm",
+      "accuracy": 0.6016,
+      "precision": 0.5859,
+      "recall": 0.6055,
+      "f1_score": 0.5846,
+      "roc_auc": 0.8954,
+      "inference_latency_ms": 1.56,
+      "validation_accuracy": 0.6076,
+      "validation_macro_f1": 0.596,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6346,
+          "macro_f1": 0.594
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.3125,
+          "macro_f1": 0.2989
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.651,
+          "macro_f1": 0.6037
+        }
+      }
+    },
+    "CRNN (CNN + Bi-LSTM Hybrid)": {
+      "key": "crnn",
+      "accuracy": 0.5194,
+      "precision": 0.5727,
+      "recall": 0.5175,
+      "f1_score": 0.4981,
+      "roc_auc": 0.8776,
+      "inference_latency_ms": 1.93,
+      "validation_accuracy": 0.5832,
+      "validation_macro_f1": 0.5752,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.5865,
+          "macro_f1": 0.5532
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.3523,
+          "macro_f1": 0.3427
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.5427,
+          "macro_f1": 0.5083
+        }
+      }
+    },
+    "Hybrid (Gradient Boosting + Bi-LSTM)": {
+      "key": "hybrid",
+      "accuracy": 0.6516,
+      "precision": 0.6685,
+      "recall": 0.6527,
+      "f1_score": 0.6342,
+      "roc_auc": 0.9135,
+      "inference_latency_ms": 29.3,
+      "validation_accuracy": 0.6499,
+      "validation_macro_f1": 0.6426,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6346,
+          "macro_f1": 0.5971
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.4432,
+          "macro_f1": 0.4347
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.6917,
+          "macro_f1": 0.6502
+        }
+      }
+    },
+    "Validation-selected Ensemble": {
+      "key": "ensemble",
+      "accuracy": 0.7121,
+      "precision": 0.7139,
+      "recall": 0.7127,
+      "f1_score": 0.7046,
+      "roc_auc": 0.9472,
+      "inference_latency_ms": 3.7,
+      "validation_accuracy": 0.6916,
+      "validation_macro_f1": 0.6866,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6923,
+          "macro_f1": 0.6494
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.358,
+          "macro_f1": 0.3514
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.7792,
+          "macro_f1": 0.7664
+        }
+      }
+    },
+    "Calibrated Deep MLP (Multi-Layer Perceptron)": {
+      "key": "calibrated_mlp",
+      "accuracy": 0.5637,
+      "precision": 0.6215,
+      "recall": 0.5619,
+      "f1_score": 0.5366,
+      "roc_auc": 0.8947,
+      "inference_latency_ms": 0.46,
+      "validation_accuracy": 0.5974,
+      "validation_macro_f1": 0.601,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6058,
+          "macro_f1": 0.556
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.4716,
+          "macro_f1": 0.4546
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.576,
+          "macro_f1": 0.5292
+        }
+      }
+    },
+    "Calibrated Random Forest": {
+      "key": "calibrated_random_forest",
+      "accuracy": 0.4863,
+      "precision": 0.5086,
+      "recall": 0.4895,
+      "f1_score": 0.4633,
+      "roc_auc": 0.864,
+      "inference_latency_ms": 42.18,
+      "validation_accuracy": 0.5474,
+      "validation_macro_f1": 0.5388,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6154,
+          "macro_f1": 0.5505
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.3977,
+          "macro_f1": 0.3914
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.4885,
+          "macro_f1": 0.4433
+        }
+      }
+    },
+    "Calibrated Support Vector Classifier (SVM)": {
+      "key": "calibrated_svm",
+      "accuracy": 0.6073,
+      "precision": 0.6473,
+      "recall": 0.6069,
+      "f1_score": 0.5758,
+      "roc_auc": 0.9003,
+      "inference_latency_ms": 0.77,
+      "validation_accuracy": 0.5964,
+      "validation_macro_f1": 0.5971,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.5769,
+          "macro_f1": 0.5209
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.5,
+          "macro_f1": 0.4831
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.6302,
+          "macro_f1": 0.5774
+        }
+      }
+    },
+    "Calibrated Histogram Gradient Boosting": {
+      "key": "calibrated_hist_gradient_boosting",
+      "accuracy": 0.5185,
+      "precision": 0.538,
+      "recall": 0.5195,
+      "f1_score": 0.4784,
+      "roc_auc": 0.8951,
+      "inference_latency_ms": 15.0,
+      "validation_accuracy": 0.5414,
+      "validation_macro_f1": 0.5401,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6058,
+          "macro_f1": 0.545
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.4432,
+          "macro_f1": 0.437
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.5229,
+          "macro_f1": 0.4415
+        }
+      }
+    },
+    "Calibrated 1D-CNN (Temporal Convolutional Network)": {
+      "key": "calibrated_cnn",
+      "accuracy": 0.7306,
+      "precision": 0.7331,
+      "recall": 0.7314,
+      "f1_score": 0.7284,
+      "roc_auc": 0.9492,
+      "inference_latency_ms": 0.77,
+      "validation_accuracy": 0.6436,
+      "validation_macro_f1": 0.647,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6731,
+          "macro_f1": 0.6468
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.358,
+          "macro_f1": 0.3635
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.8052,
+          "macro_f1": 0.7967
+        }
+      }
+    },
+    "Calibrated Bi-LSTM (Bidirectional Recurrent Network)": {
+      "key": "calibrated_lstm",
+      "accuracy": 0.6113,
+      "precision": 0.6197,
+      "recall": 0.6152,
+      "f1_score": 0.6088,
+      "roc_auc": 0.8961,
+      "inference_latency_ms": 1.75,
+      "validation_accuracy": 0.5857,
+      "validation_macro_f1": 0.584,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6154,
+          "macro_f1": 0.5756
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.3125,
+          "macro_f1": 0.3091
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.6656,
+          "macro_f1": 0.6361
+        }
+      }
+    },
+    "Calibrated CRNN (CNN + Bi-LSTM Hybrid)": {
+      "key": "calibrated_crnn",
+      "accuracy": 0.5573,
+      "precision": 0.6091,
+      "recall": 0.5562,
+      "f1_score": 0.5579,
+      "roc_auc": 0.8847,
+      "inference_latency_ms": 1.66,
+      "validation_accuracy": 0.5621,
+      "validation_macro_f1": 0.5692,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.625,
+          "macro_f1": 0.5856
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.3636,
+          "macro_f1": 0.3623
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.5854,
+          "macro_f1": 0.5818
+        }
+      }
+    },
+    "Calibrated Hybrid (Gradient Boosting + Bi-LSTM)": {
+      "key": "calibrated_hybrid",
+      "accuracy": 0.6331,
+      "precision": 0.6478,
+      "recall": 0.6364,
+      "f1_score": 0.6307,
+      "roc_auc": 0.9146,
+      "inference_latency_ms": 45.93,
+      "validation_accuracy": 0.6514,
+      "validation_macro_f1": 0.649,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6731,
+          "macro_f1": 0.6468
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.4205,
+          "macro_f1": 0.4226
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.6677,
+          "macro_f1": 0.6404
+        }
+      }
+    },
+    "Calibrated Validation-selected Ensemble": {
+      "key": "calibrated_ensemble",
+      "accuracy": 0.7379,
+      "precision": 0.739,
+      "recall": 0.739,
+      "f1_score": 0.7357,
+      "roc_auc": 0.9488,
+      "inference_latency_ms": 3.23,
+      "validation_accuracy": 0.6485,
+      "validation_macro_f1": 0.6529,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.6827,
+          "macro_f1": 0.664
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.3352,
+          "macro_f1": 0.3452
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.8177,
+          "macro_f1": 0.8079
+        }
+      }
+    },
+    "WavLM Speech Classifier": {
+      "key": "speech_encoder",
+      "accuracy": 0.8782,
+      "precision": 0.8892,
+      "recall": 0.8788,
+      "f1_score": 0.8805,
+      "roc_auc": 0.9876,
+      "inference_latency_ms": 338.73,
+      "validation_accuracy": 0.8484,
+      "validation_macro_f1": 0.8512,
+      "test_by_dataset": {
+        "EMO-DB": {
+          "samples": 104,
+          "accuracy": 0.8365384615384616,
+          "macro_f1": 0.8208183572699701
+        },
+        "RAVDESS": {
+          "samples": 176,
+          "accuracy": 0.7954545454545454,
+          "macro_f1": 0.8068747306918693
+        },
+        "TESS": {
+          "samples": 960,
+          "accuracy": 0.8979166666666667,
+          "macro_f1": 0.8994771042839241
+        }
+      }
+    }
+  },
+  "dataset_summary": {
+    "name": "RAVDESS + TESS + EMO-DB",
+    "datasets": {
+      "RAVDESS": {
+        "source": "https://zenodo.org/records/1188976"
+      },
+      "TESS": {
+        "source": "https://doi.org/10.5683/SP2/E8H2MF"
+      },
+      "EMO-DB": {
+        "source": "http://emodb.bilderbar.info/"
+      }
+    },
+    "total_samples": 3910,
+    "train_samples": 2142,
+    "validation_samples": 528,
+    "calibration_samples": 263,
+    "model_selection_samples": 265,
+    "test_samples": 1240,
+    "samples_by_dataset": {
+      "train": {
+        "EMO-DB": 238,
+        "RAVDESS": 704,
+        "TESS": 1200
+      },
+      "validation": {
+        "EMO-DB": 112,
+        "RAVDESS": 176,
+        "TESS": 240
+      },
+      "test": {
+        "EMO-DB": 104,
+        "RAVDESS": 176,
+        "TESS": 960
+      }
+    },
+    "emotions_count": 6,
+    "emotions_list": [
+      "neutral",
+      "happy",
+      "sad",
+      "angry",
+      "fearful",
+      "disgust"
+    ],
+    "sample_rate": 22050,
+    "feature_dimension": 231,
+    "temporal_sequence_shape": [
+      40,
+      128
+    ],
+    "temporal_sequence_method": "MFCC frames interpolated across the full utterance",
+    "split_method": "RAVDESS actors 01-16/17-20/21-24; TESS OAF train and disjoint YAF clips for validation/test (same held-out speaker because TESS has only two); EMO-DB speakers split 60/20/20",
+    "model_selection_metric": "macro F1 balanced by dataset and class; balanced accuracy breaks ties. Separate calibration and selection clips.",
+    "training_weighting": "equal weight per dataset and shared emotion class",
+    "speech_encoder": {
+      "name": "microsoft/wavlm-base-plus",
+      "revision": "4c66d4806a428f2e922ccfa1a962776e232d487b",
+      "training_originals": 2142,
+      "augmented_training_samples": 0,
+      "sample_rate": 16000,
+      "features": "Layer 8 hidden-state mean and standard deviation",
+      "selection": "Validation only; frozen self-supervised encoder and SVM head trained on original training recordings."
+    }
+  },
+  "confusion_matrix": {
+    "neutral": {
+      "neutral": 169,
+      "happy": 10,
+      "sad": 11,
+      "angry": 0,
+      "fearful": 2,
+      "disgust": 0
+    },
+    "happy": {
+      "neutral": 2,
+      "happy": 177,
+      "sad": 21,
+      "angry": 6,
+      "fearful": 3,
+      "disgust": 0
+    },
+    "sad": {
+      "neutral": 5,
+      "happy": 2,
+      "sad": 192,
+      "angry": 0,
+      "fearful": 1,
+      "disgust": 5
+    },
+    "angry": {
+      "neutral": 7,
+      "happy": 14,
+      "sad": 11,
+      "angry": 184,
+      "fearful": 0,
+      "disgust": 3
+    },
+    "fearful": {
+      "neutral": 1,
+      "happy": 5,
+      "sad": 8,
+      "angry": 2,
+      "fearful": 187,
+      "disgust": 4
+    },
+    "disgust": {
+      "neutral": 0,
+      "happy": 4,
+      "sad": 23,
+      "angry": 1,
+      "fearful": 0,
+      "disgust": 180
+    }
+  },
+  "per_emotion_metrics": {
+    "neutral": {
+      "precision": 0.9185,
+      "recall": 0.8802,
+      "f1_score": 0.8989,
+      "support": 192
+    },
+    "happy": {
+      "precision": 0.8349,
+      "recall": 0.8469,
+      "f1_score": 0.8409,
+      "support": 209
+    },
+    "sad": {
+      "precision": 0.7218,
+      "recall": 0.9366,
+      "f1_score": 0.8153,
+      "support": 205
+    },
+    "angry": {
+      "precision": 0.9534,
+      "recall": 0.8402,
+      "f1_score": 0.8932,
+      "support": 219
+    },
+    "fearful": {
+      "precision": 0.9689,
+      "recall": 0.9034,
+      "f1_score": 0.935,
+      "support": 207
+    },
+    "disgust": {
+      "precision": 0.9375,
+      "recall": 0.8654,
+      "f1_score": 0.9,
+      "support": 208
+    }
+  },
+  "top_features": []
+}

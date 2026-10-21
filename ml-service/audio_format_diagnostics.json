@@ -1,0 +1,1870 @@
+{
+  "summary": {
+    "best": {
+      "wav": {
+        "predicted_counts": {
+          "neutral": 5,
+          "angry": 4,
+          "happy": 2,
+          "disgust": 3,
+          "sad": 2,
+          "fearful": 2
+        },
+        "correct": 12,
+        "changed_from_wav": 0
+      },
+      "mp3_direct": {
+        "predicted_counts": {
+          "neutral": 5,
+          "angry": 4,
+          "happy": 3,
+          "disgust": 2,
+          "sad": 2,
+          "fearful": 2
+        },
+        "correct": 11,
+        "changed_from_wav": 1
+      },
+      "mp3_browser_pcm": {
+        "predicted_counts": {
+          "neutral": 5,
+          "angry": 4,
+          "happy": 3,
+          "disgust": 2,
+          "sad": 2,
+          "fearful": 2
+        },
+        "correct": 11,
+        "changed_from_wav": 1
+      },
+      "boundary_silence": {
+        "predicted_counts": {
+          "neutral": 4,
+          "angry": 5,
+          "happy": 2,
+          "disgust": 3,
+          "sad": 3,
+          "fearful": 1
+        },
+        "correct": 10,
+        "changed_from_wav": 3
+      }
+    },
+    "balanced_audio": {
+      "wav": {
+        "predicted_counts": {
+          "neutral": 4,
+          "disgust": 5,
+          "happy": 2,
+          "fearful": 3,
+          "sad": 2,
+          "angry": 2
+        },
+        "correct": 7,
+        "changed_from_wav": 0
+      },
+      "mp3_direct": {
+        "predicted_counts": {
+          "neutral": 3,
+          "disgust": 6,
+          "happy": 2,
+          "fearful": 3,
+          "sad": 2,
+          "angry": 2
+        },
+        "correct": 8,
+        "changed_from_wav": 1
+      },
+      "mp3_browser_pcm": {
+        "predicted_counts": {
+          "neutral": 4,
+          "disgust": 5,
+          "happy": 2,
+          "fearful": 3,
+          "sad": 2,
+          "angry": 2
+        },
+        "correct": 7,
+        "changed_from_wav": 0
+      },
+      "boundary_silence": {
+        "predicted_counts": {
+          "neutral": 4,
+          "disgust": 6,
+          "happy": 3,
+          "sad": 2,
+          "angry": 2,
+          "fearful": 1
+        },
+        "correct": 7,
+        "changed_from_wav": 2
+      }
+    }
+  },
+  "samples": [
+    {
+      "id": "ravdess_neutral",
+      "expected": "neutral",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.7123,
+              "happy": 0.0566,
+              "sad": 0.0913,
+              "angry": 0.0167,
+              "fearful": 0.0018,
+              "disgust": 0.1213
+            }
+          },
+          "mp3_direct": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.6927,
+              "happy": 0.0549,
+              "sad": 0.0921,
+              "angry": 0.0178,
+              "fearful": 0.0017,
+              "disgust": 0.1407
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.6932,
+              "happy": 0.0551,
+              "sad": 0.0924,
+              "angry": 0.0178,
+              "fearful": 0.0017,
+              "disgust": 0.1398
+            }
+          },
+          "boundary_silence": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.4339,
+              "happy": 0.1304,
+              "sad": 0.1524,
+              "angry": 0.0773,
+              "fearful": 0.0172,
+              "disgust": 0.1889
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9962,
+              "happy": 0.0006,
+              "sad": 0.0011,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0021
+            }
+          },
+          "mp3_direct": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9932,
+              "happy": 0.0007,
+              "sad": 0.0019,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0042
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9931,
+              "happy": 0.0007,
+              "sad": 0.0019,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0042
+            }
+          },
+          "boundary_silence": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.773,
+              "happy": 0.0351,
+              "sad": 0.0658,
+              "angry": 0.001,
+              "fearful": 0.006,
+              "disgust": 0.1192
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "ravdess_happy",
+      "expected": "happy",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.6025,
+              "happy": 0.117,
+              "sad": 0.1087,
+              "angry": 0.0207,
+              "fearful": 0.005,
+              "disgust": 0.1461
+            }
+          },
+          "mp3_direct": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.5906,
+              "happy": 0.1325,
+              "sad": 0.0962,
+              "angry": 0.0234,
+              "fearful": 0.0049,
+              "disgust": 0.1524
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.5844,
+              "happy": 0.1365,
+              "sad": 0.0971,
+              "angry": 0.0244,
+              "fearful": 0.0054,
+              "disgust": 0.1522
+            }
+          },
+          "boundary_silence": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.2989,
+              "happy": 0.2178,
+              "sad": 0.1595,
+              "angry": 0.105,
+              "fearful": 0.0365,
+              "disgust": 0.1823
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9846,
+              "happy": 0.0095,
+              "sad": 0.0045,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0014
+            }
+          },
+          "mp3_direct": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9806,
+              "happy": 0.0152,
+              "sad": 0.0025,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0017
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9813,
+              "happy": 0.0146,
+              "sad": 0.0024,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0016
+            }
+          },
+          "boundary_silence": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.577,
+              "happy": 0.2222,
+              "sad": 0.124,
+              "angry": 0.0027,
+              "fearful": 0.0136,
+              "disgust": 0.0605
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "ravdess_sad",
+      "expected": "sad",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.4732,
+              "happy": 0.0513,
+              "sad": 0.1005,
+              "angry": 0.0246,
+              "fearful": 0.0023,
+              "disgust": 0.348
+            }
+          },
+          "mp3_direct": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.476,
+              "happy": 0.0541,
+              "sad": 0.0913,
+              "angry": 0.0308,
+              "fearful": 0.0023,
+              "disgust": 0.3455
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.475,
+              "happy": 0.0538,
+              "sad": 0.0918,
+              "angry": 0.0305,
+              "fearful": 0.0022,
+              "disgust": 0.3467
+            }
+          },
+          "boundary_silence": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.364,
+              "happy": 0.0936,
+              "sad": 0.1986,
+              "angry": 0.0641,
+              "fearful": 0.0149,
+              "disgust": 0.2647
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.1205,
+              "happy": 0.0036,
+              "sad": 0.3697,
+              "angry": 0.0036,
+              "fearful": 0.0026,
+              "disgust": 0.5001
+            }
+          },
+          "mp3_direct": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0616,
+              "happy": 0.0043,
+              "sad": 0.4514,
+              "angry": 0.0045,
+              "fearful": 0.0025,
+              "disgust": 0.4757
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0626,
+              "happy": 0.0043,
+              "sad": 0.4206,
+              "angry": 0.0045,
+              "fearful": 0.0026,
+              "disgust": 0.5053
+            }
+          },
+          "boundary_silence": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.1971,
+              "happy": 0.0287,
+              "sad": 0.2938,
+              "angry": 0.002,
+              "fearful": 0.0026,
+              "disgust": 0.4759
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "ravdess_angry",
+      "expected": "angry",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0056,
+              "happy": 0.3439,
+              "sad": 0.0075,
+              "angry": 0.624,
+              "fearful": 0.0126,
+              "disgust": 0.0063
+            }
+          },
+          "mp3_direct": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0047,
+              "happy": 0.4096,
+              "sad": 0.0062,
+              "angry": 0.5616,
+              "fearful": 0.0115,
+              "disgust": 0.0064
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0046,
+              "happy": 0.4106,
+              "sad": 0.0061,
+              "angry": 0.5606,
+              "fearful": 0.0118,
+              "disgust": 0.0064
+            }
+          },
+          "boundary_silence": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0311,
+              "happy": 0.3783,
+              "sad": 0.042,
+              "angry": 0.4747,
+              "fearful": 0.0429,
+              "disgust": 0.031
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.0004,
+              "happy": 0.6875,
+              "sad": 0.0106,
+              "angry": 0.2545,
+              "fearful": 0.0307,
+              "disgust": 0.0163
+            }
+          },
+          "mp3_direct": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.0001,
+              "happy": 0.6925,
+              "sad": 0.0031,
+              "angry": 0.279,
+              "fearful": 0.0148,
+              "disgust": 0.0104
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.0001,
+              "happy": 0.6886,
+              "sad": 0.0031,
+              "angry": 0.2829,
+              "fearful": 0.015,
+              "disgust": 0.0104
+            }
+          },
+          "boundary_silence": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.015,
+              "happy": 0.7744,
+              "sad": 0.0638,
+              "angry": 0.0325,
+              "fearful": 0.0525,
+              "disgust": 0.0618
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "ravdess_fearful",
+      "expected": "fearful",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.133,
+              "happy": 0.5894,
+              "sad": 0.0891,
+              "angry": 0.0695,
+              "fearful": 0.0162,
+              "disgust": 0.1027
+            }
+          },
+          "mp3_direct": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.1296,
+              "happy": 0.5957,
+              "sad": 0.0794,
+              "angry": 0.0783,
+              "fearful": 0.0135,
+              "disgust": 0.1035
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.1254,
+              "happy": 0.599,
+              "sad": 0.079,
+              "angry": 0.0803,
+              "fearful": 0.0142,
+              "disgust": 0.1021
+            }
+          },
+          "boundary_silence": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.1353,
+              "happy": 0.3691,
+              "sad": 0.1414,
+              "angry": 0.1351,
+              "fearful": 0.0382,
+              "disgust": 0.1809
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.1235,
+              "happy": 0.502,
+              "sad": 0.1469,
+              "angry": 0.0003,
+              "fearful": 0.1484,
+              "disgust": 0.0789
+            }
+          },
+          "mp3_direct": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.0873,
+              "happy": 0.691,
+              "sad": 0.0928,
+              "angry": 0.0003,
+              "fearful": 0.0588,
+              "disgust": 0.0697
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.0888,
+              "happy": 0.6903,
+              "sad": 0.0911,
+              "angry": 0.0003,
+              "fearful": 0.0603,
+              "disgust": 0.0693
+            }
+          },
+          "boundary_silence": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.1999,
+              "happy": 0.3643,
+              "sad": 0.1735,
+              "angry": 0.0021,
+              "fearful": 0.1198,
+              "disgust": 0.1405
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "ravdess_disgust",
+      "expected": "disgust",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.2343,
+              "happy": 0.2948,
+              "sad": 0.0387,
+              "angry": 0.2445,
+              "fearful": 0.0067,
+              "disgust": 0.1811
+            }
+          },
+          "mp3_direct": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.2108,
+              "happy": 0.3057,
+              "sad": 0.0319,
+              "angry": 0.2738,
+              "fearful": 0.0052,
+              "disgust": 0.1725
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.2077,
+              "happy": 0.3043,
+              "sad": 0.032,
+              "angry": 0.2805,
+              "fearful": 0.0056,
+              "disgust": 0.1698
+            }
+          },
+          "boundary_silence": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.1637,
+              "happy": 0.2742,
+              "sad": 0.082,
+              "angry": 0.281,
+              "fearful": 0.0338,
+              "disgust": 0.1653
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.6604,
+              "happy": 0.097,
+              "sad": 0.0011,
+              "angry": 0.0304,
+              "fearful": 0.0011,
+              "disgust": 0.2101
+            }
+          },
+          "mp3_direct": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.3774,
+              "happy": 0.1657,
+              "sad": 0.001,
+              "angry": 0.0627,
+              "fearful": 0.0007,
+              "disgust": 0.3924
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.3914,
+              "happy": 0.1674,
+              "sad": 0.001,
+              "angry": 0.0622,
+              "fearful": 0.0008,
+              "disgust": 0.3772
+            }
+          },
+          "boundary_silence": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.6855,
+              "happy": 0.1204,
+              "sad": 0.0073,
+              "angry": 0.0246,
+              "fearful": 0.0125,
+              "disgust": 0.1497
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tess_neutral",
+      "expected": "neutral",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9487,
+              "happy": 0.0003,
+              "sad": 0.0004,
+              "angry": 0.0003,
+              "fearful": 0.0001,
+              "disgust": 0.0502
+            }
+          },
+          "mp3_direct": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9386,
+              "happy": 0.0002,
+              "sad": 0.0011,
+              "angry": 0.0004,
+              "fearful": 0.0001,
+              "disgust": 0.0597
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9384,
+              "happy": 0.0002,
+              "sad": 0.001,
+              "angry": 0.0004,
+              "fearful": 0.0001,
+              "disgust": 0.06
+            }
+          },
+          "boundary_silence": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.6816,
+              "happy": 0.0432,
+              "sad": 0.0304,
+              "angry": 0.0389,
+              "fearful": 0.0098,
+              "disgust": 0.1961
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 1.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0
+            }
+          },
+          "mp3_direct": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 1.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 1.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0
+            }
+          },
+          "boundary_silence": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.9984,
+              "happy": 0.0007,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.0009
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tess_happy",
+      "expected": "happy",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0499,
+              "happy": 0.2933,
+              "sad": 0.1072,
+              "angry": 0.0434,
+              "fearful": 0.1063,
+              "disgust": 0.3999
+            }
+          },
+          "mp3_direct": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0483,
+              "happy": 0.2887,
+              "sad": 0.1129,
+              "angry": 0.0464,
+              "fearful": 0.1039,
+              "disgust": 0.3997
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0484,
+              "happy": 0.2895,
+              "sad": 0.1125,
+              "angry": 0.0464,
+              "fearful": 0.1039,
+              "disgust": 0.3992
+            }
+          },
+          "boundary_silence": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0485,
+              "happy": 0.3189,
+              "sad": 0.0596,
+              "angry": 0.1811,
+              "fearful": 0.069,
+              "disgust": 0.323
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0551,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.9449
+            }
+          },
+          "mp3_direct": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0859,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.9141
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0866,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 0.9133
+            }
+          },
+          "boundary_silence": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0001,
+              "happy": 0.3007,
+              "sad": 0.0028,
+              "angry": 0.0016,
+              "fearful": 0.0023,
+              "disgust": 0.6924
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tess_sad",
+      "expected": "sad",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.086,
+              "happy": 0.0106,
+              "sad": 0.3991,
+              "angry": 0.0023,
+              "fearful": 0.3213,
+              "disgust": 0.1807
+            }
+          },
+          "mp3_direct": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0607,
+              "happy": 0.0013,
+              "sad": 0.4145,
+              "angry": 0.0116,
+              "fearful": 0.2681,
+              "disgust": 0.2438
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.061,
+              "happy": 0.0013,
+              "sad": 0.4142,
+              "angry": 0.0117,
+              "fearful": 0.2678,
+              "disgust": 0.244
+            }
+          },
+          "boundary_silence": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.1427,
+              "happy": 0.0337,
+              "sad": 0.3066,
+              "angry": 0.0446,
+              "fearful": 0.1668,
+              "disgust": 0.3056
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0004,
+              "happy": 0.0,
+              "sad": 0.012,
+              "angry": 0.0,
+              "fearful": 0.0217,
+              "disgust": 0.9659
+            }
+          },
+          "mp3_direct": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0009,
+              "happy": 0.0,
+              "sad": 0.027,
+              "angry": 0.0,
+              "fearful": 0.0295,
+              "disgust": 0.9425
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0009,
+              "happy": 0.0,
+              "sad": 0.0263,
+              "angry": 0.0,
+              "fearful": 0.0296,
+              "disgust": 0.9433
+            }
+          },
+          "boundary_silence": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0148,
+              "happy": 0.0034,
+              "sad": 0.0036,
+              "angry": 0.0002,
+              "fearful": 0.0084,
+              "disgust": 0.9696
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tess_angry",
+      "expected": "angry",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.004,
+              "happy": 0.0126,
+              "sad": 0.0034,
+              "angry": 0.6915,
+              "fearful": 0.0088,
+              "disgust": 0.2796
+            }
+          },
+          "mp3_direct": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0018,
+              "happy": 0.0082,
+              "sad": 0.0017,
+              "angry": 0.7112,
+              "fearful": 0.0044,
+              "disgust": 0.2727
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0018,
+              "happy": 0.0083,
+              "sad": 0.0017,
+              "angry": 0.7113,
+              "fearful": 0.0044,
+              "disgust": 0.2724
+            }
+          },
+          "boundary_silence": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0215,
+              "happy": 0.065,
+              "sad": 0.0234,
+              "angry": 0.579,
+              "fearful": 0.0261,
+              "disgust": 0.285
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 0.1248,
+              "fearful": 0.0,
+              "disgust": 0.8752
+            }
+          },
+          "mp3_direct": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 0.1309,
+              "fearful": 0.0,
+              "disgust": 0.869
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 0.13,
+              "fearful": 0.0,
+              "disgust": 0.8699
+            }
+          },
+          "boundary_silence": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0002,
+              "happy": 0.0024,
+              "sad": 0.0,
+              "angry": 0.0875,
+              "fearful": 0.0,
+              "disgust": 0.9098
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tess_fearful",
+      "expected": "fearful",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0074,
+              "happy": 0.2605,
+              "sad": 0.0066,
+              "angry": 0.0008,
+              "fearful": 0.7053,
+              "disgust": 0.0193
+            }
+          },
+          "mp3_direct": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0071,
+              "happy": 0.2068,
+              "sad": 0.0088,
+              "angry": 0.001,
+              "fearful": 0.753,
+              "disgust": 0.0233
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0071,
+              "happy": 0.2071,
+              "sad": 0.0088,
+              "angry": 0.001,
+              "fearful": 0.7528,
+              "disgust": 0.0233
+            }
+          },
+          "boundary_silence": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.05,
+              "happy": 0.3922,
+              "sad": 0.0278,
+              "angry": 0.1088,
+              "fearful": 0.272,
+              "disgust": 0.1493
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0153,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.9847,
+              "disgust": 0.0
+            }
+          },
+          "mp3_direct": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0238,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.9762,
+              "disgust": 0.0
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0238,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.9762,
+              "disgust": 0.0
+            }
+          },
+          "boundary_silence": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.0014,
+              "happy": 0.8484,
+              "sad": 0.0003,
+              "angry": 0.0328,
+              "fearful": 0.1097,
+              "disgust": 0.0074
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "tess_disgust",
+      "expected": "disgust",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0014,
+              "happy": 0.0057,
+              "sad": 0.0008,
+              "angry": 0.0045,
+              "fearful": 0.0003,
+              "disgust": 0.9873
+            }
+          },
+          "mp3_direct": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0011,
+              "happy": 0.0053,
+              "sad": 0.0008,
+              "angry": 0.0045,
+              "fearful": 0.0002,
+              "disgust": 0.9881
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0011,
+              "happy": 0.0053,
+              "sad": 0.0008,
+              "angry": 0.0045,
+              "fearful": 0.0002,
+              "disgust": 0.9881
+            }
+          },
+          "boundary_silence": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0166,
+              "happy": 0.0438,
+              "sad": 0.0166,
+              "angry": 0.1426,
+              "fearful": 0.0127,
+              "disgust": 0.7677
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 1.0
+            }
+          },
+          "mp3_direct": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 1.0
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 0.0,
+              "fearful": 0.0,
+              "disgust": 1.0
+            }
+          },
+          "boundary_silence": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0006,
+              "happy": 0.0044,
+              "sad": 0.0001,
+              "angry": 0.002,
+              "fearful": 0.0,
+              "disgust": 0.9928
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "emodb_neutral",
+      "expected": "neutral",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.7116,
+              "happy": 0.0543,
+              "sad": 0.1366,
+              "angry": 0.0003,
+              "fearful": 0.0857,
+              "disgust": 0.0114
+            }
+          },
+          "mp3_direct": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.7223,
+              "happy": 0.0558,
+              "sad": 0.1283,
+              "angry": 0.0004,
+              "fearful": 0.0812,
+              "disgust": 0.012
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "neutral",
+            "probabilities": {
+              "neutral": 0.7219,
+              "happy": 0.0559,
+              "sad": 0.1285,
+              "angry": 0.0004,
+              "fearful": 0.0814,
+              "disgust": 0.012
+            }
+          },
+          "boundary_silence": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.1802,
+              "happy": 0.1473,
+              "sad": 0.3402,
+              "angry": 0.0379,
+              "fearful": 0.2187,
+              "disgust": 0.0757
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0027,
+              "happy": 0.0,
+              "sad": 0.9673,
+              "angry": 0.0,
+              "fearful": 0.0299,
+              "disgust": 0.0
+            }
+          },
+          "mp3_direct": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0027,
+              "happy": 0.0,
+              "sad": 0.9565,
+              "angry": 0.0,
+              "fearful": 0.0407,
+              "disgust": 0.0
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0027,
+              "happy": 0.0,
+              "sad": 0.9561,
+              "angry": 0.0,
+              "fearful": 0.0411,
+              "disgust": 0.0
+            }
+          },
+          "boundary_silence": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0342,
+              "happy": 0.0189,
+              "sad": 0.8169,
+              "angry": 0.0004,
+              "fearful": 0.1004,
+              "disgust": 0.0292
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "emodb_happy",
+      "expected": "happy",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0006,
+              "happy": 0.0159,
+              "sad": 0.0,
+              "angry": 0.9762,
+              "fearful": 0.0071,
+              "disgust": 0.0003
+            }
+          },
+          "mp3_direct": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0004,
+              "happy": 0.0125,
+              "sad": 0.0,
+              "angry": 0.9807,
+              "fearful": 0.0062,
+              "disgust": 0.0002
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0004,
+              "happy": 0.0125,
+              "sad": 0.0,
+              "angry": 0.9807,
+              "fearful": 0.0062,
+              "disgust": 0.0002
+            }
+          },
+          "boundary_silence": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0123,
+              "happy": 0.0776,
+              "sad": 0.0058,
+              "angry": 0.8009,
+              "fearful": 0.0705,
+              "disgust": 0.0329
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.002,
+              "sad": 0.0,
+              "angry": 0.9948,
+              "fearful": 0.0033,
+              "disgust": 0.0
+            }
+          },
+          "mp3_direct": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0017,
+              "sad": 0.0,
+              "angry": 0.9941,
+              "fearful": 0.0042,
+              "disgust": 0.0
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0017,
+              "sad": 0.0,
+              "angry": 0.9941,
+              "fearful": 0.0042,
+              "disgust": 0.0
+            }
+          },
+          "boundary_silence": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0031,
+              "happy": 0.0514,
+              "sad": 0.0001,
+              "angry": 0.8902,
+              "fearful": 0.0539,
+              "disgust": 0.0014
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "emodb_sad",
+      "expected": "sad",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0224,
+              "happy": 0.0016,
+              "sad": 0.865,
+              "angry": 0.0,
+              "fearful": 0.1102,
+              "disgust": 0.0007
+            }
+          },
+          "mp3_direct": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.02,
+              "happy": 0.0017,
+              "sad": 0.847,
+              "angry": 0.0,
+              "fearful": 0.1305,
+              "disgust": 0.0008
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0195,
+              "happy": 0.0017,
+              "sad": 0.8468,
+              "angry": 0.0,
+              "fearful": 0.1313,
+              "disgust": 0.0007
+            }
+          },
+          "boundary_silence": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0685,
+              "happy": 0.032,
+              "sad": 0.7868,
+              "angry": 0.0009,
+              "fearful": 0.0885,
+              "disgust": 0.0234
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.9999,
+              "angry": 0.0,
+              "fearful": 0.0001,
+              "disgust": 0.0
+            }
+          },
+          "mp3_direct": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.9999,
+              "angry": 0.0,
+              "fearful": 0.0001,
+              "disgust": 0.0
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.9999,
+              "angry": 0.0,
+              "fearful": 0.0001,
+              "disgust": 0.0
+            }
+          },
+          "boundary_silence": {
+            "emotion": "sad",
+            "probabilities": {
+              "neutral": 0.0025,
+              "happy": 0.0011,
+              "sad": 0.9923,
+              "angry": 0.0,
+              "fearful": 0.0018,
+              "disgust": 0.0023
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "emodb_angry",
+      "expected": "angry",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0008,
+              "sad": 0.0,
+              "angry": 0.9986,
+              "fearful": 0.0005,
+              "disgust": 0.0001
+            }
+          },
+          "mp3_direct": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0011,
+              "sad": 0.0,
+              "angry": 0.9978,
+              "fearful": 0.001,
+              "disgust": 0.0001
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0011,
+              "sad": 0.0,
+              "angry": 0.9978,
+              "fearful": 0.001,
+              "disgust": 0.0001
+            }
+          },
+          "boundary_silence": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0003,
+              "happy": 0.0224,
+              "sad": 0.0002,
+              "angry": 0.9385,
+              "fearful": 0.0153,
+              "disgust": 0.0233
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 1.0,
+              "fearful": 0.0,
+              "disgust": 0.0
+            }
+          },
+          "mp3_direct": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 1.0,
+              "fearful": 0.0,
+              "disgust": 0.0
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0,
+              "sad": 0.0,
+              "angry": 1.0,
+              "fearful": 0.0,
+              "disgust": 0.0
+            }
+          },
+          "boundary_silence": {
+            "emotion": "angry",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0005,
+              "sad": 0.0,
+              "angry": 0.9959,
+              "fearful": 0.0001,
+              "disgust": 0.0035
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "emodb_fearful",
+      "expected": "fearful",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0001,
+              "happy": 0.0141,
+              "sad": 0.0001,
+              "angry": 0.0155,
+              "fearful": 0.968,
+              "disgust": 0.0022
+            }
+          },
+          "mp3_direct": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0001,
+              "happy": 0.0108,
+              "sad": 0.0001,
+              "angry": 0.013,
+              "fearful": 0.9739,
+              "disgust": 0.0021
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0001,
+              "happy": 0.0108,
+              "sad": 0.0001,
+              "angry": 0.0106,
+              "fearful": 0.9764,
+              "disgust": 0.002
+            }
+          },
+          "boundary_silence": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.011,
+              "happy": 0.0809,
+              "sad": 0.0146,
+              "angry": 0.2115,
+              "fearful": 0.595,
+              "disgust": 0.0871
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0006,
+              "sad": 0.0,
+              "angry": 0.0001,
+              "fearful": 0.9993,
+              "disgust": 0.0
+            }
+          },
+          "mp3_direct": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0004,
+              "sad": 0.0,
+              "angry": 0.0001,
+              "fearful": 0.9994,
+              "disgust": 0.0001
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0003,
+              "sad": 0.0,
+              "angry": 0.0001,
+              "fearful": 0.9996,
+              "disgust": 0.0
+            }
+          },
+          "boundary_silence": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0,
+              "happy": 0.0675,
+              "sad": 0.0029,
+              "angry": 0.0429,
+              "fearful": 0.8016,
+              "disgust": 0.0851
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "emodb_disgust",
+      "expected": "disgust",
+      "models": {
+        "best": {
+          "wav": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0532,
+              "happy": 0.2933,
+              "sad": 0.0178,
+              "angry": 0.0049,
+              "fearful": 0.2853,
+              "disgust": 0.3455
+            }
+          },
+          "mp3_direct": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.0646,
+              "happy": 0.3251,
+              "sad": 0.0235,
+              "angry": 0.0042,
+              "fearful": 0.2872,
+              "disgust": 0.2953
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "happy",
+            "probabilities": {
+              "neutral": 0.0649,
+              "happy": 0.3223,
+              "sad": 0.0237,
+              "angry": 0.0042,
+              "fearful": 0.2886,
+              "disgust": 0.2963
+            }
+          },
+          "boundary_silence": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0533,
+              "happy": 0.1958,
+              "sad": 0.0563,
+              "angry": 0.0626,
+              "fearful": 0.2303,
+              "disgust": 0.4016
+            }
+          }
+        },
+        "balanced_audio": {
+          "wav": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0017,
+              "happy": 0.0684,
+              "sad": 0.071,
+              "angry": 0.0052,
+              "fearful": 0.7614,
+              "disgust": 0.0923
+            }
+          },
+          "mp3_direct": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0023,
+              "happy": 0.0364,
+              "sad": 0.217,
+              "angry": 0.0037,
+              "fearful": 0.697,
+              "disgust": 0.0435
+            }
+          },
+          "mp3_browser_pcm": {
+            "emotion": "fearful",
+            "probabilities": {
+              "neutral": 0.0023,
+              "happy": 0.0343,
+              "sad": 0.2182,
+              "angry": 0.0035,
+              "fearful": 0.6981,
+              "disgust": 0.0437
+            }
+          },
+          "boundary_silence": {
+            "emotion": "disgust",
+            "probabilities": {
+              "neutral": 0.0114,
+              "happy": 0.1284,
+              "sad": 0.2166,
+              "angry": 0.02,
+              "fearful": 0.0903,
+              "disgust": 0.5334
+            }
+          }
+        }
+      }
+    }
+  ]
+}

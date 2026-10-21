@@ -1,0 +1,110 @@
+[
+  {
+    "id": "ravdess_neutral",
+    "expected": "neutral",
+    "predicted": "disgust",
+    "confidence": 0.4062
+  },
+  {
+    "id": "ravdess_happy",
+    "expected": "happy",
+    "predicted": "disgust",
+    "confidence": 0.4271
+  },
+  {
+    "id": "ravdess_sad",
+    "expected": "sad",
+    "predicted": "disgust",
+    "confidence": 0.6067
+  },
+  {
+    "id": "ravdess_angry",
+    "expected": "angry",
+    "predicted": "angry",
+    "confidence": 0.6701
+  },
+  {
+    "id": "ravdess_fearful",
+    "expected": "fearful",
+    "predicted": "happy",
+    "confidence": 0.5092
+  },
+  {
+    "id": "ravdess_disgust",
+    "expected": "disgust",
+    "predicted": "angry",
+    "confidence": 0.5039
+  },
+  {
+    "id": "tess_neutral",
+    "expected": "neutral",
+    "predicted": "calm",
+    "confidence": 0.4919
+  },
+  {
+    "id": "tess_happy",
+    "expected": "happy",
+    "predicted": "calm",
+    "confidence": 0.3752
+  },
+  {
+    "id": "tess_sad",
+    "expected": "sad",
+    "predicted": "disgust",
+    "confidence": 0.49
+  },
+  {
+    "id": "tess_angry",
+    "expected": "angry",
+    "predicted": "disgust",
+    "confidence": 0.5169
+  },
+  {
+    "id": "tess_fearful",
+    "expected": "fearful",
+    "predicted": "disgust",
+    "confidence": 0.656
+  },
+  {
+    "id": "tess_disgust",
+    "expected": "disgust",
+    "predicted": "disgust",
+    "confidence": 0.4485
+  },
+  {
+    "id": "emodb_neutral",
+    "expected": "neutral",
+    "predicted": "calm",
+    "confidence": 0.438
+  },
+  {
+    "id": "emodb_happy",
+    "expected": "happy",
+    "predicted": "disgust",
+    "confidence": 0.3973
+  },
+  {
+    "id": "emodb_sad",
+    "expected": "sad",
+    "predicted": "calm",
+    "confidence": 0.4286
+  },
+  {
+    "id": "emodb_angry",
+    "expected": "angry",
+    "predicted": "disgust",
+    "confidence": 0.3731
+  },
+  {
+    "id": "emodb_fearful",
+    "expected": "fearful",
+    "predicted": "disgust",
+    "confidence": 0.4612
+  },
+  {
+    "id": "emodb_disgust",
+    "expected": "disgust",
+    "predicted": "calm",
+    "confidence": 0.465
+  }
+]

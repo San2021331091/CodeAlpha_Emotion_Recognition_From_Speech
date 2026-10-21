@@ -1,0 +1,13 @@
+{
+  "previous_test_accuracy": 0.6855,
+  "validation_accuracy": 0.6704545454545454,
+  "validation_macro_f1": 0.6626657166087137,
+  "left": "lstm",
+  "right": "svm",
+  "weight": 0.5,
+  "test_accuracy": 0.6943548387096774,
+  "test_macro_f1": 0.6808856640728745,
+  "EMO-DB": 0.6057692307692307,
+  "RAVDESS": 0.42613636363636365,
+  "TESS": 0.753125
+}

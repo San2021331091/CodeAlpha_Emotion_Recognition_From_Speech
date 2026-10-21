@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  ml-service:
+    build:
+      context: ./ml-service
+      dockerfile: Dockerfile
+    container_name: speech_emotion_ml_service
+    ports:
+      - "8000:8000"
+    environment:
+      - PORT=8000
+    volumes:
+      - ./ml-service/saved_models:/app/saved_models
+      - ./ml-service/data:/app/data
+    restart: unless-stopped
+
+  backend-gateway:
+    build:
+      context: ./backend-gateway
+      dockerfile: Dockerfile
+    container_name: speech_emotion_backend_gateway
+    ports:
+      - "3001:3001"
+    environment:
+      - PORT=3001
+      - ML_SERVICE_URL=http://ml-service:8000
+    depends_on:
+      - ml-service
+    restart: unless-stopped
+
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: speech_emotion_frontend
+    ports:
+      - "3000:3000"
+    environment:
+      - NEXT_PUBLIC_API_URL=http://localhost:3001
+      - NEXT_PUBLIC_ML_URL=http://localhost:8000
+    depends_on:
+      - backend-gateway
+    restart: unless-stopped
