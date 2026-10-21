@@ -203,3 +203,6 @@ $RECYCLE.BIN/
 *.bak
 *.sublime-project
 *.sublime-workspace
+
+# presenation_slides
+presentation_slides.html
