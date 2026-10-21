@@ -355,11 +355,8 @@ npm run dev
 
 ---
 
-## 📹 Video Presentation & Submission Checklist
-
-As required by CodeAlpha instructions:
-- [x] Repository named: `CodeAlpha_Emotion_Recognition_From_Speech`
-- [x] Frontend (Next.js 15) + Backend (NestJS) + ML Service (FastAPI) implemented.
-- [x] Interactive presentation slides available at: `presentation_slides.html`.
-- [ ] Post a video explanation of the project on LinkedIn tagging @CodeAlpha.
-- [ ] Submit completed project via the CodeAlpha Submission Form.
+## 👨‍💻 Author & Acknowledgements
+- Developed by: **Santosh Saha**
+- Role: Machine Learning Intern at [CodeAlpha](https://www.codealpha.tech/)
+- Task: Task-2 — Speech Emotion Recognition
+- Program: CodeAlpha Machine Learning Internship
