@@ -15,9 +15,21 @@ CACHE_DIRECTORY = Path(__file__).resolve().parents[2] / '.model_cache'
 def load_encoder():
     import torch
     from transformers import AutoFeatureExtractor, AutoModel
+    from huggingface_hub import hf_hub_download
     torch.set_num_threads(4)
-    processor = AutoFeatureExtractor.from_pretrained(MODEL_ID, revision=REVISION, cache_dir=str(CACHE_DIRECTORY), local_files_only=True)
-    model = AutoModel.from_pretrained(MODEL_ID, revision=REVISION, cache_dir=str(CACHE_DIRECTORY), local_files_only=True)
+    try:
+        # This pinned revision uses PyTorch weights. Check their presence before
+        # Transformers 4.57 can pass a missing checkpoint (None) to endswith().
+        hf_hub_download(MODEL_ID, 'pytorch_model.bin', revision=REVISION,
+                        cache_dir=str(CACHE_DIRECTORY), local_files_only=True)
+        processor = AutoFeatureExtractor.from_pretrained(MODEL_ID, revision=REVISION, cache_dir=str(CACHE_DIRECTORY), local_files_only=True)
+        model = AutoModel.from_pretrained(MODEL_ID, revision=REVISION, cache_dir=str(CACHE_DIRECTORY), local_files_only=True)
+    except OSError as exc:
+        raise RuntimeError(
+            f"The local WavLM encoder cache is missing, incomplete, or unreadable at {CACHE_DIRECTORY}. "
+            "From ml-service, run `python download_speech_encoder.py` with internet access, "
+            "then retry inference. Keep the .model_cache directory for offline inference."
+        ) from exc
     model.eval()
     return processor, model
 

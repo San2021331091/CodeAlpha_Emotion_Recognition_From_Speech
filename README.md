@@ -29,6 +29,20 @@ Predictions are also projected into **Russell's Circumplex Model of Affect**, pr
 
 ---
 
+## 🖼️ Screenshot Gallery
+
+| Voice Studio & Emotion Analysis | Benchmark Samples |
+|:---:|:---:|
+| <a href="./screenshots/1.png"><img src="./screenshots/1.png" alt="Voice Studio with speech emotion analysis results" width="100%"></a> | <a href="./screenshots/2.png"><img src="./screenshots/2.png" alt="Benchmark audio samples and emotion analysis results" width="100%"></a> |
+| [View full screenshot](./screenshots/1.png) | [View full screenshot](./screenshots/2.png) |
+
+| Model Performance Lab | Session Voice Logs |
+|:---:|:---:|
+| <a href="./screenshots/3.png"><img src="./screenshots/3.png" alt="Model Performance Lab with benchmark metrics and diagnostics" width="100%"></a> | <a href="./screenshots/4.png"><img src="./screenshots/4.png" alt="Session Voice Logs with analyzed utterances" width="100%"></a> |
+| [View full screenshot](./screenshots/3.png) | [View full screenshot](./screenshots/4.png) |
+
+---
+
 ## 🧠 Machine Learning Methodology
 
 ### 1. Acoustic Signal Processing & Feature Engineering
@@ -309,10 +323,18 @@ python -m venv .venv
 # Install the CPU build used by this project:
 python -m pip install torch==2.7.1 --index-url https://download.pytorch.org/whl/cpu
 python -m pip install -r requirements.txt
+python download_speech_encoder.py
 python train_pipeline.py
 python -m uvicorn app.main:app --host 127.0.0.1 --port 8000 --reload
 ```
 *API Docs available at: `http://127.0.0.1:8000/docs`*
+
+WavLM inference requires `ml-service/.model_cache`, which is not tracked in Git.
+The launcher downloads missing encoder files, and Docker bundles them at build time.
+For manual setup, run `python download_speech_encoder.py` from `ml-service` with
+internet access. Once cached, inference runs offline. If inference reports a missing
+feature extractor or encoder cache, run that command again and retry the request;
+retraining the emotion classifier is not required.
 
 #### Step 2: Start NestJS Backend Gateway
 ```bash

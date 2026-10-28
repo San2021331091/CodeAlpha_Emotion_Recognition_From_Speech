@@ -14,6 +14,9 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# Bundle the pinned encoder so inference can run without internet access.
+RUN python download_speech_encoder.py
+
 # Run model training if models not present
 RUN python train_pipeline.py
 

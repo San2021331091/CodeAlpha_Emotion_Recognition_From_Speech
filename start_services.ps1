@@ -6,6 +6,11 @@ Write-Host "==========================================================" -Foregro
 $root = $PSScriptRoot
 $mlPython = Join-Path $root 'ml-service\.venv\Scripts\python.exe'
 if (-not (Test-Path -LiteralPath $mlPython)) { $mlPython = 'python' }
+Write-Host "Checking the local speech encoder cache..." -ForegroundColor Green
+& $mlPython (Join-Path $root 'ml-service\download_speech_encoder.py')
+if ($LASTEXITCODE -ne 0) {
+    throw "Speech encoder setup failed. Check internet access and run ml-service\download_speech_encoder.py before starting services."
+}
 $backendRoot = Join-Path $root 'backend-gateway'
 $backendTsc = Join-Path $backendRoot 'node_modules\.bin\tsc.cmd'
 if (-not (Test-Path -LiteralPath $backendTsc)) {
